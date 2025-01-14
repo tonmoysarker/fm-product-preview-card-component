@@ -46,9 +46,28 @@
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    
-    &:hover, &:active, &:focus {
+
+    &:hover,
+    &:active,
+    &:focus {
       background-color: $darker-cyan;
+    }
+  }
+}
+
+@media (min-width: 36rem) {
+  .product-card {
+    flex-direction: row;
+    picture {
+      width: 50%;
+      img {
+        height: 100%;
+      }
+    }
+    &__content {
+      width: 50%;
+      padding: 2rem;
+      justify-content: space-evenly;
     }
   }
 }

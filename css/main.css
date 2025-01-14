@@ -46,7 +46,7 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.product-card__add-to-cart:hover {
+.product-card__add-to-cart:hover, .product-card__add-to-cart:active, .product-card__add-to-cart:focus {
   background-color: hsl(158, 42%, 27%);
 }
 

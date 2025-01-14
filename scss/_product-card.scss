@@ -1,0 +1,43 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  background-color: $white;
+  border: 1px solid red;
+
+  &__content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+  }
+
+  &__label {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+
+  &__title {
+    font-family: "Fraunces";
+    font-size: 2rem;
+    line-height: 1;
+  }
+  &__price {
+    display: flex;
+    align-items: center;
+    &--current {
+      font-family: "Fraunces";
+      font-size: 2rem;
+      color: $dark-cyan;
+      margin-right: 1rem;
+    }
+  }
+
+  &__add-to-cart {
+    padding: 1rem;
+    background-color: $dark-cyan;
+    color: $white;
+    border: none;
+  }
+}

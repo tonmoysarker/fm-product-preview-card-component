@@ -1,0 +1,17 @@
+@media (min-width: 36rem) {
+  .product-card {
+    flex-direction: row;
+    height: 60vh;
+    picture {
+      width: 50%;
+      img{
+        height: 100%;
+      }
+    }
+    &__content {
+      width: 50%;
+      padding: 2rem;
+    gap: 1rem;
+    }
+  }
+}

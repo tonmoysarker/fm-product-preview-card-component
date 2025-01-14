@@ -2,9 +2,11 @@
   display: flex;
   flex-direction: column;
   width: 90%;
+  max-width: 37.5rem;
   margin: 0 auto;
   background-color: $white;
-  border: 1px solid red;
+  border-radius: 10px;
+  overflow: hidden;
 
   &__content {
     padding: 1.5rem;
@@ -19,15 +21,16 @@
   }
 
   &__title {
-    font-family: "Fraunces";
+    font-family: "Fraunces", "Times New Roman", Times, serif;
     font-size: 2rem;
     line-height: 1;
+    color: $very-dark-blue;
   }
   &__price {
     display: flex;
     align-items: center;
     &--current {
-      font-family: "Fraunces";
+      font-family: "Fraunces", "Times New Roman", Times, serif;
       font-size: 2rem;
       color: $dark-cyan;
       margin-right: 1rem;
@@ -39,5 +42,12 @@
     background-color: $dark-cyan;
     color: $white;
     border: none;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: $darker-cyan;
+    }
   }
 }

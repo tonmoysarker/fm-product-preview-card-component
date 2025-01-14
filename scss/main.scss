@@ -4,6 +4,7 @@
 
 @import "variables";
 @import "product-card";
+@import "media-queries";
 
 // General Styles
 html {
@@ -20,11 +21,13 @@ body {
 
 p {
   font-size: 0.875rem;
+  color: $dark-grayish-blue;
 }
 
 img {
   max-inline-size: 100%;
   block-size: auto;
+  object-fit: cover;
 }
 // Container Styles
 .container {
